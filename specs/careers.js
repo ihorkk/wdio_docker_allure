@@ -13,6 +13,7 @@ describe('Careers', () => {
 
     it('Should verify "Apply With LinkedIn" is present', async () => {
         await CareersPage.firstPosition[0].click();
+        await browser.pause(2000);
         await browser.switchWindow('greenhouse');
         await GreenHousePage.applyBtn.click();
         await expect(GreenHousePage.applyLinkedinBtn).toBeExisting();

@@ -8,7 +8,7 @@ const chromeConfig = {
         browserName: "chrome",
         acceptInsecureCerts: true,
         'goog:chromeOptions': {
-            args: ['--start-maximized'],
+            args: ['--headless', '--start-maximized', '--no-sandbox', '--disable-gpu', '--window-size=1920,1080', '--allow-insecure-localhost'],
         }
     }],
 };

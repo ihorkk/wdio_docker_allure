@@ -15,7 +15,7 @@ jobs:
               
             - name: Tests execution
               continue-on-error: true
-              run: npm run wdio
+              run: npm run chrome
           
             - name: Get Allure history
               uses: actions/checkout@v2
