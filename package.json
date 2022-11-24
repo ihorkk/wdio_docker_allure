@@ -28,7 +28,11 @@
         "allure:clean": "rm -rf allure-results/* allure-report/*",
         "chrome": "wdio run configs/wdio.chrome.conf.js",
         "firefox": "wdio run configs/wdio.firefox.conf.js",
-        "edge": "wdio run configs/wdio.edge.conf.js"
+        "edge": "wdio run configs/wdio.edge.conf.js",
+        "docker": "wdio run configs/wdio.docker.conf.js",
+        "docker up": "docker-compose -f docker-compose.yml up",
+        "docker down": "docker-compose -f docker-compose.yml down"
+
     },
     "dependencies": {
         "chance": "^1.1.9",
