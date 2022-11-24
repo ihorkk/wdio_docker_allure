@@ -16,10 +16,31 @@
        npm install
       ```
 
-## Execute
+## Execution
 
-- To run all tests:
+- To run all tests with Chrome:
     `npm run wdio`
+- To run all tests with Chrome in headless mode:
+    `npm run chrome` 
+- To run all tests with Firefox:
+    `npm run firefox`
+- To run all tests with Microsoft Edge:
+    `npm run edge`    
+- To generate allure report:
+    `npm run allure:generate`
+- To open allure report:
+    `npm run allure:open`
+- To clean allure results:
+    `npm run allure:clean`
+- To start docker:
+    `npm run docker up`
+- To run docker locally at https://localhost/4444
+    `npm run docker`
+- To terminate docker:
+    `npm run docker down`  
 
-- You will find more scripts in the package.json file
+
+## Reports and results
+
+- You will find allure report at [githubpages](https://ihorkk.github.io/wdio_docker_allure/)
 
